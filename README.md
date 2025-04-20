@@ -23,7 +23,7 @@ npm install
 ```
 This installs all necessary dependencies defined in package.json.
 
-### Run the App Locally
+### Run the App Locally(Recommended)
 To start the development server:
 
 ```bash
@@ -31,7 +31,7 @@ ng serve
 ```
 Once the server starts, open your browser and navigate to: http://localhost:4200/
 The application will automatically reload when you make code changes.
-
+### OR
 ### Build the Project
 To create a production-ready build:
 
