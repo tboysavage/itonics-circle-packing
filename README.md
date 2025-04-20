@@ -2,17 +2,13 @@
 This project is a D3-based interactive circle packing visualization built with Angular. It displays countries in Europe grouped by region and sized based on either population or land area.
 
 👤 Created by: Tanatswa Mapfumo
-For: Itonics Assignment for Frontend Developer 
+
+Itonics: Assignment for Frontend Developer 
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
 
-### Prerequisites
-
-Before running the project, ensure you have the following installed:
-
-- Node.js (v16 or higher)
-- Angular CLI (v16 or higher recommended)
+##To use the project do the following
 
 ### 📦 Install Dependencies
 
