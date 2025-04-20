@@ -8,7 +8,7 @@ Itonics: Assignment for Frontend Developer
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
 
-##To use the project do the following
+## To use the project do the following
 
 ### 📦 Install Dependencies
 
