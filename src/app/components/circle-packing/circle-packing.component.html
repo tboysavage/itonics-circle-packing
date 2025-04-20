@@ -1,0 +1,30 @@
+<!-- switch to change between Land Area and Population view -->
+<div class="toggle-container">
+  <span class="label">Land Area</span>
+
+  <label class="switch">
+    <!-- Checkbox binds to metricIsPopulation and triggers chart update -->
+    <input type="checkbox" [(ngModel)]="metricIsPopulation" (change)="updateMetricFromToggle()">
+    <span class="slider"></span>
+  </label>
+
+  <span class="label">Population</span>
+</div>
+
+<!-- D3 will render the circle packing visualization inside this SVG -->
+<svg></svg>
+
+<!-- Side drawer: appears only when a country is selected -->
+<div *ngIf="selectedCountry" class="side-drawer">
+  <!-- Close button for drawer -->
+  <button class="close-button" (click)="closeDrawer()">×</button>
+
+  <!-- Country details shown on drawer -->
+  <img [src]="selectedCountry.flag" alt="{{ selectedCountry.country }} Flag" width="200">
+  <h2>{{ selectedCountry.country }}</h2>
+  <p><strong>Population:</strong> {{ selectedCountry.population | number }}</p>
+  <p><strong>Land Area:</strong> {{ selectedCountry.land_area_km2 | number }} km²</p>
+
+  <!-- link to wikipedia for additional info -->
+  <a [href]="selectedCountry.wikipedia" target="_blank">Learn More</a>
+</div>
